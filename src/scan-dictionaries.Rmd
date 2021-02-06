@@ -32,16 +32,15 @@ for (fn in flist) {
 ```
 
 ```{r}
-vlist <- NULL
+slist <- NULL
 for (fn in flist) {
   y <- read_yaml(paste0("../dd/", fn))
   v <- y$vars
     if (length(v)==0) next
   for (i in 1:length(v)) {
-    vlist <- append(vlist, names(v[[i]]))
     if (length(v[[i]])==0) next
-    if ("days" %in% names(v[[i]])) {print(fn); print(v[[i]])}
+    if ("scale" %in% names(v[[i]])) {slist <- append(slist, v[[i]]$scale)}
   }
 }
-sort(unique(vlist))
+sort(unique(slist))
 ```

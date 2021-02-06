@@ -48,7 +48,7 @@ vars:
   
   surgery:
     label: prior bypass surgery
-    value: 
+    values: 
       no: 0
       yes: 1
       

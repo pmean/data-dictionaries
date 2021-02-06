@@ -35,7 +35,7 @@ vars:
 
   lost:
     label: how the leader lost power
-    value: 
+    values: 
       still in power at the end of the study: 0
       constitutional exit: 1
       natural death: 2

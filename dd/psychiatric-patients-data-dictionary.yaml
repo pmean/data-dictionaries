@@ -49,7 +49,7 @@ vars:
     
   death:
     label: indicator for death
-    value: 
+    values: 
       discharged: 0
       died: 1      
 ---
