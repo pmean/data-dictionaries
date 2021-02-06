@@ -1,0 +1,26 @@
+---
+title: "scan-dictionaries"
+author: "Steve Simon"
+date: "Created 2021-02-06"
+output: html_document
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding,
+  output_dir = "../results", output_format = "all") })  
+---
+
+This program scans the data dictionaries in the src folder and tallies which fields are used or not used. It was last modified on `r Sys.Date()`. You can find copyright information in the LICENSE file.
+
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(echo=FALSE)
+suppressMessages(suppressWarnings(library(yaml)))
+```
+
+```{r}
+flist <- list.files(path="../dd", pattern="*.yaml")
+flist
+for (fn in flist) {
+  y <- read_yaml(paste0("../dd/", fn))
+  print(fn)
+  print(names(y))
+}
+```
