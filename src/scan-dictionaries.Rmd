@@ -17,10 +17,31 @@ suppressMessages(suppressWarnings(library(yaml)))
 
 ```{r}
 flist <- list.files(path="../dd", pattern="*.yaml")
-flist
+nlist <- NULL
 for (fn in flist) {
   y <- read_yaml(paste0("../dd/", fn))
-  print(fn)
-  print(names(y))
+  nlist <- c(nlist, names(y))
 }
+nlist <- sort(unique(nlist))
+for (fn in flist) {
+  y <- read_yaml(paste0("../dd/", fn))
+  dlist <- setdiff(nlist, names(y))
+  if (length(dlist)==0) next
+  print(paste0(c(fn, dlist), collapse=", "))
+}
+```
+
+```{r}
+vlist <- NULL
+for (fn in flist) {
+  y <- read_yaml(paste0("../dd/", fn))
+  v <- y$vars
+    if (length(v)==0) next
+  for (i in 1:length(v)) {
+    vlist <- append(vlist, names(v[[i]]))
+    if (length(v[[i]])==0) next
+    if ("days" %in% names(v[[i]])) {print(fn); print(v[[i]])}
+  }
+}
+sort(unique(vlist))
 ```

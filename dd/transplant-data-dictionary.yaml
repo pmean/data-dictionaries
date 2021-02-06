@@ -1,5 +1,5 @@
 ---
-data-dictionary: transplant.txt
+data_dictionary: transplant.txt
 
 source:
   This dataset is available though the survival

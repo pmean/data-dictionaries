@@ -1,5 +1,5 @@
 ---
-data-dictionary: fly1.txt
+data_dictionary: fly1.txt
 
 source:
   This data is a lightly modified subset of data

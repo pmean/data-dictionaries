@@ -1,14 +1,14 @@
 ---
-data-dictionary: fly.txt
+data_dictionary: fly.txt
 
 source:
-  See fly1-data-dictionary.yaml
+  See fly1-data_dictionary.yaml
   
 description:
-  See fly1-data-dictionary.yaml
+  See fly1-data_dictionary.yaml
   
 copyright:  
-  See fly1-data-dictionary.yaml
+  See fly1-data_dictionary.yaml
 
 format: 
   delimiter: space

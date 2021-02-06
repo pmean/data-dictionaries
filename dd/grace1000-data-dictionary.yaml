@@ -1,5 +1,5 @@
 ---
-data-dictionary: grace1000.dat
+data_dictionary: grace1000.dat
 
 source: 
   This dataset is described and used in Chapter 7 of
@@ -28,12 +28,13 @@ format:
 vars:
   id:
     label: Patient Identification Number
-    days:
-      label: Follow Up Time
-      unit: days
-      special notes: 
-        Patients discharged on same day assigned
-        a value of 0.5.
+
+  days:
+    label: Follow Up Time
+    unit: days
+    special notes: 
+      Patients discharged on same day assigned
+      a value of 0.5.
 
   death:
     label: Death During Follow Up
@@ -50,7 +51,7 @@ vars:
   revascdays:
     label: Time to Revascularization After Admission
     unit: days
-    special note:
+    special notes:
       Set to follow up time if no revascularization
 
   los:

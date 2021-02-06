@@ -1,5 +1,5 @@
 ---
-data-dictionary: transplant2.csv
+data_dictionary: transplant2.csv
 
 source:
   This dataset is identical to heart.csv, 
@@ -7,16 +7,16 @@ source:
   format.
   
   For the background about this data, please
-  refer to transplant-data-dictionary.yaml.
+  refer to transplant-data_dictionary.yaml.
  
 download:
-  Please refer to transplant-data-dictionary.yaml
+  Please refer to transplant-data_dictionary.yaml
   
 description:
-  Please refer to transplant-data-dictionary.yaml
+  Please refer to transplant-data_dictionary.yaml
   
 copyright:
-  Please refer to transplant-data-dictionary.yaml
+  Please refer to transplant-data_dictionary.yaml
 
 format: 
   delimiter: comma

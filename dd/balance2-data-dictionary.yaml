@@ -2,13 +2,13 @@
 data_dictionary: balance2.txt
 
 source: 
-  See balance1-data-dictionary.yaml
+  See balance1-data_dictionary.yaml
 
 description:  
-  See balance1-data-dictionary.yaml
+  See balance1-data_dictionary.yaml
 
 copyright:  
-  See balance1-data-dictionary.yaml
+  See balance1-data_dictionary.yaml
 
 download:
   http://www.statsci.org/data/oz/ctsibuni.txt

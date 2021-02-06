@@ -1,12 +1,11 @@
 ---
-data-dictionary: two-small-data-frames.RData
+data_dictionary: two-small-data-frames.RData
 
 description:
   This is an R binary file that contains two 
   dataframes. See the data dictionaries
   listed below for more details.
 
-datasets:
-  bump: airline-data-dictionary.yaml
-  fd: fat-data-dictionary.yaml
+  bump, airline-data_dictionary.yaml
+  fd, fat-data_dictionary.yaml
 ---

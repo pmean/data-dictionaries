@@ -1,5 +1,5 @@
 ---
-data-dictionary: psychiatric-patients.txt
+data_dictionary: psychiatric-patients.txt
 
 source: 
   This dataset is described in a handout from
